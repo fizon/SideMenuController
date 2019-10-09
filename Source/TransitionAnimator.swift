@@ -22,6 +22,7 @@
 //  SOFTWARE.
 
 import Foundation
+import UIKit
 
 /**
  *  Protocol for defining custom animations for when switching the center view controller.
@@ -42,7 +43,7 @@ public struct FadeAnimator: TransitionAnimatable {
         fadeAnimation.duration = 0.35
         fadeAnimation.fromValue = 0
         fadeAnimation.toValue = 1
-        fadeAnimation.fillMode = kCAFillModeForwards
+        fadeAnimation.fillMode = .forwards
         fadeAnimation.isRemovedOnCompletion = true
         view.layer.add(fadeAnimation, forKey: "fade")
         CATransaction.commit()

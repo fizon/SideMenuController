@@ -21,6 +21,8 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
+import UIKit
+
 // MARK: - Extension for implementing the specific functionality for when side panel is positioned over the center
 extension SideMenuController {
     
@@ -35,11 +37,11 @@ extension SideMenuController {
         
         let leftSwipeRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(handleLeftSwipe))
         leftSwipeRecognizer.delegate = self
-        leftSwipeRecognizer.direction = UISwipeGestureRecognizerDirection.left
+        leftSwipeRecognizer.direction = UISwipeGestureRecognizer.Direction.left
         
         let rightSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(handleRightSwipe))
         rightSwipeGesture.delegate = self
-        rightSwipeGesture.direction = UISwipeGestureRecognizerDirection.right
+        rightSwipeGesture.direction = UISwipeGestureRecognizer.Direction.right
         
         centerPanelOverlay.addGestureRecognizer(tapRecognizer)
         
