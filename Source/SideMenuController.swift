@@ -24,7 +24,7 @@
 import Foundation
 import UIKit
 
-public protocol SideMenuControllerDelegate: class {
+public protocol SideMenuControllerDelegate: AnyObject {
     func sideMenuControllerDidHide(_ sideMenuController: SideMenuController)
     func sideMenuControllerDidReveal(_ sideMenuController: SideMenuController)
 }
