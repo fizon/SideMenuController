@@ -20,6 +20,9 @@ DerivedData
 # SPM
 .build
 
+# OS
+.DS_Store
+
 # CocoaPods
 #
 # We recommend against adding the Pods directory to your .gitignore. However
